@@ -1,0 +1,143 @@
+.profile-container {
+    padding: 1rem;
+    padding-bottom: 2rem;
+    background-color: var(--white-1);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.profile-text {
+    background-color: var(--blue);
+    padding: 2rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+
+    border-radius: 0.25rem;
+}
+
+.profile-text img {
+    border: 4px solid var(--white-1);
+    border-radius: 50%;
+    width: 10rem;
+}
+
+.profile-text h3 {
+    font-weight: 600;
+    color: var(--black-1);
+}
+
+.profile-text p {
+    color: var(--black-1);
+}
+
+.profile-info {
+    background-color: var(--green);
+    padding: 2rem 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    border-radius: 0.25rem;
+}
+
+.profile-info h4 {
+    color: var(--white-1);
+}
+
+.profile-info .info-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.profile-info .info-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    color: var(--white-1);
+}
+
+.profile-info .info-list li img {
+    width: 2rem;
+}
+
+.profile-techs {
+    background-color: var(--black-1);
+    padding: 2rem 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    border-radius: 0.25rem;
+}
+
+.profile-techs h4 {
+    color: var(--white-1);
+}
+
+.profile-techs img {
+    width: 2.875rem;
+}
+
+.profile-techs .images {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+@media(min-width: 768px) {
+    .profile-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'profile info'
+            'techs techs';
+    }
+
+    .profile-text {
+        grid-area: profile;
+    }
+    
+    .profile-info {
+        grid-area: info;
+    }
+
+    .profile-techs {
+        grid-area: techs;
+    }
+}
+
+@media(min-width: 1024px) {
+    .profile-container {
+        padding: 2.5rem;
+    }
+}
+
+@media(min-width: 1310px) {
+    .profile-container {
+        width: 75%;
+        padding: 3rem;
+        padding-right: 1.5rem;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'profile info'
+            'techs techs';
+    }
+
+    main {
+        flex-direction: row;
+    }
+
+    .divider {
+        display: none;
+    }
+}

@@ -1,0 +1,92 @@
+.links-container {
+    padding: 1rem;
+    padding-top: 2rem;
+    background-color: var(--white-1);
+}
+
+.links-container .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.links-container .links .link {
+    width: 100%;
+    padding: 1.5rem;
+    
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+
+    color: var(--white-1);
+    text-decoration: none;
+
+    border-radius: 0.25rem;
+
+    transition: 0.3s;
+}
+
+.links-container .links .link:hover {
+    transform: translateY(5px);
+    filter: brightness(0.95);
+}
+
+.links-container .links .link:first-of-type {
+    background-color: var(--black-1);
+}
+
+.links-container .links .link:nth-of-type(2) {
+    background-color: var(--blue);
+}
+
+.links-container .links .link:last-of-type {
+    background-color: var(--green);
+}
+
+.links-container .links .link img {
+    width: 2rem;
+}
+
+@media(min-width: 768px) {
+    .links-container .links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            'projects about'
+            'certificates none';
+    }
+
+    .links-container .links .link:first-of-type {
+        grid-area: projects;
+    }
+    
+    .links-container .links .link:nth-of-type(2) {
+        grid-area: about;
+    }
+
+    .links-container .links .link:last-of-type {
+        grid-area: certificates;
+    }
+}
+
+@media(min-width: 1024px) {
+    .links-container {
+        padding: 2.5rem;
+    }
+}
+
+@media(min-width: 1310px) {
+    .links-container {
+        padding: 3rem;
+        padding-left: 1.5rem;
+        width: 25%;
+    }
+
+    .links-container .links {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}

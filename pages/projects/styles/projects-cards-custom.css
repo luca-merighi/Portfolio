@@ -1,0 +1,126 @@
+/* Employee.Birthday */
+.employee-birthday {
+    background-color: var(--yellow);
+}
+
+.employee-birthday h3 {
+    color: var(--black);
+}
+
+/* Rocket.Tree */
+.rocket-tree {
+    background-color: var(--green-5);
+}
+
+/* RocketBlog */
+.rocket-blog {
+    background-color: var(--purple-1);
+}
+
+.rocket-blog h3 {
+    color: var(--purple-2);
+}
+
+
+/* DoggyShelter */
+.doggy-shelter {
+    background-color: var(--black-2);
+}
+
+.doggy-shelter h3 span {
+    color: var(--red);
+}
+
+/* DoctorCare */
+.doctor-care {
+    background-color: var(--green-1);
+}
+
+.doctor-care h3 {
+    color: var(--black-1);
+    font-weight: 400;
+}
+
+.doctor-care h3 span {
+    color: var(--green-2);
+    font-weight: 700;
+}
+
+/* Rocket Coffe */
+.rocket-coffe {
+    background-color: var(--black-3);
+}
+
+.rocket-coffe h3 {
+    color: var(--purple-2);
+}
+
+/* Theme Switcher */
+.theme-switcher {
+    background-color: var(--white-3);
+}
+
+.theme-switcher h3 {
+    color: var(--orange);
+}
+
+.theme-switcher h3 span {
+    color: var(--black-1);
+}
+
+/* Beauty Salon */
+.beauty-salon {
+    background-color: var(--green-3);
+}
+
+.beauty-salon h3 {
+    color: var(--black-1);
+}
+
+.beauty-salon h3 span {
+    color: var(--white-1);
+}
+
+/* Pomo.Timer */
+.pomo-timer {
+    background-color: var(--white-3);
+}
+
+.pomo-timer h3 {
+    color: var(--black-1);
+}
+
+.pomo-timer h3 span:first-of-type {
+    color: var(--red-1);
+}
+
+.pomo-timer h3 span:last-of-type {
+    color: var(--blue-1);
+}
+
+/* Countdown */
+.countdown {
+    background-color: var(--purple);
+}
+
+.countdown h3 {
+    color: var(--white-3);
+}
+
+/* Login Form */
+.login-form {
+    background-color: var(--black-4);
+}
+
+.login-form h3 {
+    color: var(--yellow-1);
+}
+
+/* Rocket News */
+.rocket-news {
+    background-color: var(--black-1);
+}
+
+.rocket-news h3 span {
+    color: var(--green-4);
+}
